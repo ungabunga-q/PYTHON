@@ -24,3 +24,5 @@ info =("Alice",25,5.6,True);print(info)
 #3. Tuple with a single element ( add a comma)
 single_element =(10,);print(single_element)
 
+#4. Empty Tuple
+empty = ()

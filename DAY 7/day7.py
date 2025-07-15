@@ -25,4 +25,16 @@ info =("Alice",25,5.6,True);print(info)
 single_element =(10,);print(single_element)
 
 #4. Empty Tuple
-empty = ()
+empty = ();print(empty)
+
+""" 
+Creating a Tuple
+
+"""
+
+#1. Example 1 : Tuple of fruits
+fruits = ("apple","banana","cherry");print(fruits)
+
+#2. Tuple using tuple constructor from a list
+a =['red','green','blue'];colors =tuple(a);print(colors)
+

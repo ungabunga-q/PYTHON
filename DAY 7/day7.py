@@ -159,4 +159,44 @@ for color in colors:
     
 
 #10. Tuple with mixed data and type checking (Prints type of each element in the tuple)
+employee = ('EOO1',"Shalini",28,True)
+for item in employee:
+    print(f"{item}------> {type(item)}")
+    
+    
+# Real world data analysis example using Tuplr
+
+""" 
+Problem:
+You are analysing a product sales dataset where each record is a tuple:
+(Product_Name, Category, Price, Quantity Sold)
+
+Objectives:
+Calculate total sales and find out the most sold product.
+"""
+
+#List of sales records tuple.
+sales_data =[
+    ('Laptop','Electronics',50000,10),
+    ('Mouse','Electronics',500,50),
+    ('Shirt','Clothing',800,30),
+    ('Book','Stationary',300,40),
+    ('Pen','Stationary',20,200),
+]
+
+total_sales =0;max_sold=0;top_product =""
+
+
+""" total sales """
+for item in sales_data:
+    name,category,price,qty = item
+    sale = price*qty
+    total_sales+=sale
+    
+# remaining code check 
+
+    
+    
+
+    
 

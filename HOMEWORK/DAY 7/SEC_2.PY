@@ -41,7 +41,7 @@ print(char_tuple)
 
 #10. Tuple of coordinates
 
-import requests
+""" import requests
 
 res = requests.get("https://ipinfo.io/json")
 data = res.json()
@@ -49,7 +49,32 @@ lat, lon = data["loc"].split(",")
 print("Latitude:", lat)
 print("Longitude:", lon)
 
-coordinates =(lat,lon);print(coordinates)
+coordinates =(lat,lon);print(coordinates) """
+
+""" 11th didn't do """
+
+#12. Tuple using slicing
+lst =[i for i in range (10,51,10)];print(lst)
+tuple_slicing = tuple(lst[1:4]);print(tuple_slicing)
+
+
+#13. Tuple from input converted list
+items = input("Enter 3 items comma seperated.split").split(",")
+print(items)
+items_tuple = tuple(items);print(items_tuple)
+
+#14. Tuple from square roots
+import math
+roots =[ math.sqrt(x) for x in [4,9,16,25,36,49,64,81,100]];roots_tuple = tuple(roots)
+print(roots_tuple)
+
+
+#15. Tuple from binary string
+bin_tuple = tuple([ bin(i)[2:] for i in range (1,51,3)])
+print(bin_tuple)
+
+#16. Tuple from reversed list
+
 
 
  

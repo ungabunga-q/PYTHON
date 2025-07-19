@@ -127,3 +127,81 @@ print(profile)
 
 #Example 5: clear()
 profile.clear();print(profile)
+
+
+"""
+ADDITIONAL USEFUL OPERATIONS
+
+"""
+
+#1. Example : Delete dictonary or a specific key
+user ={'name':'Jay','age':22}
+del user['age']  #deletes age key
+
+
+#2. Example : Copy Dictionary ( shallow copy)
+original = {'a':1,'b':2}
+copied = original.copy()
+print(copied)
+
+
+#3. Example : Merge two dictionaries 
+d1 ={'x':10};d2={'y':20}
+merged = d1| d2
+print(merged)
+
+#4. Length of dictionary
+print(f"Number of keys",len(merged))
+
+
+
+"""
+DICTIONARY OPERATIONS:
+# ADD
+# UPDATE
+# DELETE
+# TRAVERSE
+
+"""
+
+# Let's define a dictionary of an online order
+order ={
+    'order_id':'ord123',
+    'customer':'Amit Sharma',
+    'items':['Laptop','Mouse'],
+    'status':'Processing'
+}
+
+#add a new key value pair
+order['shipping'] = 'Free'
+print(f"After adding shipping info {order}")
+
+# Update the value of an existing key
+
+order['status'] ='Shipped'
+
+# Delete a key-value pair using del
+del order['shipping']
+print("After removing shipping :",order)
+
+print(order)
+# Use pop() to remove and return a key's value
+removed_item = order.pop("total_amount")
+print("Removed Amount",removed_item)
+print("Order after pop",order)
+
+
+#Loop through keys and values
+print("Order details:")
+for key,value in order.items():
+    print(f"{key} : {value}")
+    
+    
+# Check if a key exists
+if 'items' in order:
+    print("Items present in order")
+    
+# Get list of all keys, values and items
+print("Keys :", list(order.keys()))
+print("Values :",list(order.values()))
+print("Key -Value Pairs",order.items())

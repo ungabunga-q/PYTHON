@@ -98,3 +98,32 @@ if 'name' in student:
 else:
     print("Name does not exists")
 
+"""
+DICTIONARY 
+METHODS
+
+"""
+
+# Example 1: update() - to add or modify key-value pair
+profile = {'name':'Shalini'}
+profile.update({'email':'shalini@gmail.com'})
+print(profile)
+
+#Example 2: pop()- removes a specific key and returns it values
+removed_item = profile.pop('email')  #Removes 'email' key
+print("Removed",removed_item)
+
+print(profile)
+
+
+# Example 3: Items() - returns all key values pair as tuple
+
+for key,value in profile.items():
+    print(key,value)
+    
+# Example 4: setdefault()- adds keys with default value if key not present
+profile.setdefault('location','India')
+print(profile)
+
+#Example 5: clear()
+profile.clear();print(profile)

@@ -175,3 +175,136 @@ if purchase_amount > 500:
 else:
     print("No discount")
     
+#10. File existence
+file_exists = False
+if file_exists:
+    print("File found")
+else:
+    print("File not found")
+    
+    
+#3. elif (Else if ) Statement
+
+"""
+Definition:
+Allows checking multiple conditions sequentially after an initial if
+Syntax:
+if condition1:
+        # block1
+elif conditional2:
+        # block2
+elif conditional3:
+        # block3
+else:
+    # default block
+    
+Purpose:
+To handle mutliple possible outcomes with clear priority.
+"""
+# Examples
+
+#1. Greeting based on time
+time = 18
+if time <12:
+    print("Good Morning")
+elif time < 17:
+    print("Good Afternoon")
+else:
+    print('Good Evening')
+    
+
+#2. Grade System
+marks = 65
+if marks >=90:
+    print("A grade")  
+elif marks >=75:
+    print("B grade")
+elif marks >=60:
+    print("C Grade")
+else:
+    print("D grade")
+
+#3. Weather message
+temp = 5
+if temp> 30:
+    print("Hot")
+elif temp > 20:
+    print("Warm")
+elif temp > 10:
+    print("Cool")
+else:
+    print("Cold")
+    
+#4. BMI
+bmi = 28
+if bmi < 18.5:
+    print("Underweight")
+elif bmi < 25:
+    print("Normal Weight")
+elif bmi < 30:
+    print("Overweight")
+else:
+    print("Obese")
+    
+#5. Membership Level
+points = 300
+
+"""
+Nested if Statement:
+
+Definition:
+Placing an if statement inside another if block.
+
+Syntax:
+if outer_condition:
+            if inner condition:
+                        #nested block
+                        
+                        
+                        
+Purpose:
+To check multiple related conditions hierarchically.
+
+"""
+
+#1. Job eligibility 
+age = 25
+degree ='Bachelor'
+if age >=18:
+    if degree=="Bachelor":
+        print("Eligible for job")
+
+#2. Purchase decision
+price = 800
+budget = 1000
+if budget >=price:
+    if price > 500:
+        print("Purchase with discount")
+    else:
+        print("Purchase without discount")
+        
+        
+#3. Exam pass with grace
+marks = 38
+if marks <40:
+    if marks >=35:
+        print("Marks with grace marks")
+    else:
+        print("Fail")
+        
+
+#4. File Operations
+file_open = True
+file_type ='text'
+if file_open:
+    if file_type=='text':
+        print("Read text file type")
+        
+#5. Security Check
+is_logged_in = True
+is_admin = True
+if is_logged_in:
+    if is_admin:
+        print("Admin panel access")
+    else:
+        print("User panel access")

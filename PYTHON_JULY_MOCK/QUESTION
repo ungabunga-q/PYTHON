@@ -1,0 +1,54 @@
+Task -->
+
+
+Objective:
+Design and implement a console-based Student Management System in Python using basic programming concepts, including:
+Input/Output, Operators, Strings, Lists, Tuples, Dictionaries, Control Structures (if-else, loops)etc.
+
+Task Description:
+Create an interactive Console -based system that allows the user to manage student records. The system should offer menu-driven options and must implement core Python fundamentals.
+
+Functionality Requirements:
+Your Student Management System should provide the following features:
+
+1️⃣ Add Student Record
+Input student details:
+Name (string)
+Roll Number (string/integer)
+Age (integer)
+Courses (store as a tuple)
+Marks (store as a dictionary — subject as key, marks as value)
+
+2️⃣ Display All Records
+Show a summary of all student records.
+Display Name, Roll No, Age, Courses, Marks, Average Marks, and Grade.
+
+3️⃣ Search Student by Roll Number
+Allow the user to enter a roll number.
+Display all details of the corresponding student (if found).
+
+4️⃣ Update Student Record
+Modify student marks or details using their roll number.
+Prompt for updated values (courses or marks).
+
+5️⃣ Delete Student Record
+Remove a student record using the roll number.
+
+6️⃣ Calculate Average Marks
+Calculate and display the average of marks for each student.
+Based on the average, determine and display the grade:
+
+A+ (>=90)
+A (>=75)
+B (>=60)
+C (>=40)
+Fail (<40)
+
+7️⃣ Exit
+Exit the program gracefully with a thank-you message.
+
+
+💬 Share your takeaways and reflections below! 
+What did you learn? 
+What will you improve?
+ Let’s grow together! 💪✨

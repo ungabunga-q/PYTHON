@@ -84,6 +84,8 @@ t2_5 = tuple( ele    for ele in range(1,51)  if ele%5==0);print(t2_5)
 
 #6. Positive numbers
 
+""""""""" """
+
 # 6. Positive numbers
 nums = [-5, 3, 0, -1, 8]
 t6 = tuple(x for x in nums if x > 0)

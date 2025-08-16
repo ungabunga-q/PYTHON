@@ -50,9 +50,29 @@ rev_dict ={ v:k  for k,v in [('a',1),('b',2)]};print(rev_dict)
 bin_rev ={i:bin(i)   for i in range(1,6)};print(bin_rev)
 
 #10. Zip two lists into dict
-zip_dict ={}
+zip_dict ={k:v for k,v in zip(['name','age'],['Alice',25])}
+print(zip_dict)
 
+"""
 
+Section 3:
+Conditional Dictionary Comprehension
+
+"""
+#1. Even numbers only
+even_dict ={ i:i**2  for i in range(10)  if i%2==0};print(even_dict)
+
+#2. Words longer than 4
+w_len_4 ={ele:len(ele)  for ele in ['pen','pencil','marker'] if len(ele)>4}
+print(w_len_4)
+
+#3. Positive numbers only
+pos_dict ={x:x**2 for x in [-2,-1,0,1,2,3,4] if x >0 };print(pos_dict)
+
+#4. Vowels only from string
+
+v_s ={c:ord(c)   for c in 'education' if c in 'aeiou'}
+print(v_s)
 
 
 

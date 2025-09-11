@@ -264,7 +264,28 @@ class Student:
 
 s = Student('Rahul',21)
 s.display()
-print("Accessing Public Variable",s.name)        
+print("Accessing Public Variable",s.name) 
+
+
+# Example 2: Protected Members
+
+class Employee:
+    def __init__(self,name,salary):
+        self._name = name
+        self._salary = salary
         
+    def show(self):
+        print(f"Employee : {self._name},Salary:{self._salary}")
+        
+
+class Manager(Employee):
+    def manage(self):
+        print(f"Manager {self._name} manages with salary {self._salary}")
+        
+
+m = Manager('Shalini',90000)
+m.show()
+m.manage()
+
     
     
